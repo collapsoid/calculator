@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "Digital-7";
+  src: url("./assets/fonts/digital-7-font/Digital7-1e1Z.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+.display {
+  color: rgba(255, 255, 255, 0.85);
+  font-family: "Digital-7";
+  font-size: 30px;
+  padding: 0 5px;
+  box-sizing: border-box;
+}
+
+.calculator__display {
+  width: 100%;
+  height: 50px;
+  background-color: #485252;
+  margin: 0 auto;
+  overflow: auto;
+  line-height: 35px;
+}

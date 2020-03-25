@@ -1,0 +1,71 @@
+.numpad {
+  width: 100%;
+  height: 290px;
+  margin-top: 5px;
+}
+
+.button {
+  padding: 0;
+  background-color: #3a3a3a;
+  border: 1px solid #1d1d1d;
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+.button:hover {
+  filter: brightness(0.9);
+}
+
+.button:active {
+  transform: translateY(2px);
+}
+
+.top-row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.top-row__button {
+  width: 55px;
+  height: 30px;
+}
+
+.numbers {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.numpad__numbers {
+  width: 200px;
+  height: 225px;
+  margin-top: 30px;
+  margin-left: 5px;
+}
+
+.numbers__button {
+  width: 60px;
+  height: 42px;
+}
+
+.right-row {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.numpad__right-row {
+  float: right;
+  height: 250px;
+  width: 31px;
+  margin-top: 10px;
+}
+
+.right-row__button {
+  width: 30px;
+  height: 47px;
+}
+
+.button_equal {
+  background-color: #25447e;
+}
