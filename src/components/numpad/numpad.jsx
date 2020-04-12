@@ -14,21 +14,15 @@ export default function Numpad(props) {
     }
     
     if (e.target.id === '=') {
-      props.handleResult();
-      
-      return;
+      return props.handleResult();
     }
 
     if (e.target.id === 'C') {
-      props.handleDelete(true);
-
-      return;
+      return props.handleDelete(true);
     }
 
     if (e.target.id === '←') {
-      props.handleDelete();
-
-      return;
+      return props.handleDelete();
     }
 
     props.handleInput(e.target.id);
