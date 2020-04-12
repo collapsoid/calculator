@@ -54,7 +54,7 @@ export default class App extends React.Component {
 
     try {
       this.setState({
-        input: eval(expression.join('') + current)
+        input: `${eval(expression.join('') + current)}`
       });
     } catch {
       this.setState({
@@ -69,9 +69,7 @@ export default class App extends React.Component {
         input: ''
       });
     } else {
-      this.setState({
-        input: this.state.input.slice(0, -1)
-      });
+      this.setState((state) => ({input: state.input.slice(0, -1)}));
     }
   }
 
@@ -97,6 +95,10 @@ export default class App extends React.Component {
         }
 
         if (button.id === '=' && e.key === 'Enter') {
+          desiredButton = button;
+        }
+
+        if (button.id === '÷' && e.key === '/') {
           desiredButton = button;
         }
 
